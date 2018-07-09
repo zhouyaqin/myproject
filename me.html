@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人中心</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="个人中心">
+
+    <link rel="stylesheet" href="../lib/weui.min.css">
+    <link rel="stylesheet" href="../css/jquery-weui.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body ontouchstart>
+
+    <div class="header-box clearfix">
+        <img src="images/header.jpg" alt="" class="headerImg">
+        <p class="title"><span id="name"></span></p>
+        <!-- <p class="content">AppID: <span id="appID"></span></p> -->
+        <!-- <ul class="clearfix">
+            <li>
+              <a href="wallt.html" style="color: #fff">
+                <p class="t1">￥<span id="balance">0</span></p>
+                <p class="t2">余额(元)</p>
+              </a>
+            </li>
+            <li>
+                <p class="t1"><span id="bankcard">0</span></p>
+                <p class="t2">银行卡</p>
+            </li>
+        </ul> -->
+    </div>
+
+    <div class="main-body">
+       <div class="weui-cells">
+          <div class="weui-cell weui-cell_access">
+            <div class="weui-cell__bd ml-10">
+              <p>我是BOSS</p>
+            </div>
+            <div class="weui-cell__ft" style="font-size: 12px">查看全部</div>
+          </div>
+       </div>
+       <div class="main-body__content clearfix">
+          <div class="main-body__item">
+             <img src="images/ico_11.png" alt="" class="img">
+             <p class="text">微信分享</p>
+          </div>
+          <div class="main-body__item">
+             <img src="images/ico_12.png" alt="" class="img">
+             <p class="text">QQ分享</p>
+          </div>
+          <div class="main-body__item">
+             <a href="code.html">
+                <img src="images/ico_13.png" alt="" class="img">
+                <p class="text">二维码分享</p>
+             </a>
+          </div>
+          <div class="main-body__item">
+             <img src="images/ico_14.png" alt="" class="img">
+             <p class="text">佣金</p>
+          </div>
+       </div>
+    </div>
+
+    <div class="grid-body">
+        <div class="weui-grids">
+          <a href="person_info.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/me_ico.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              个人资料
+            </p>
+          </a>
+          <a href="wallt.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/m_ico.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              我的钱包
+            </p>
+          </a>
+          <a href="metask.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/task_ico.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              我的任务
+            </p>
+          </a>
+          <a href="add_address.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/addr_ico.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              地址管理
+            </p>
+          </a>
+          <a href="feedback.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/feedback.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              意见反馈
+            </p>
+          </a>
+          <a href="setting.html" class="weui-grid js_grid">
+            <div class="weui-grid__icon">
+              <img src="images/set_ico.png" alt="">
+            </div>
+            <p class="weui-grid__label">
+              设置
+            </p>
+          </a>
+        </div>
+    </div>
+
+    <!-- <div class="weui-cells">
+        <a class="weui-cell weui-cell_access" href="person_info.html">
+            <div class="weui-cell__hd">
+               <img src="images/me_ico.png" alt="" class="me-ico">
+            </div>
+            <div class="weui-cell__bd ml-10 person-list">
+              <p>个人资料</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+        <a class="weui-cell weui-cell_access" href="wallt.html">
+          <div class="weui-cell__hd">
+             <img src="images/m_ico.png" alt="" class="me-ico">
+          </div>
+          <div class="weui-cell__bd ml-10 person-list">
+            <p>我的钱包</p>
+          </div>
+          <div class="weui-cell__ft"></div>
+        </a>
+    </div>
+    
+    <div class="weui-cells"> 
+          <a class="weui-cell weui-cell_access" href="code.html">
+            <div class="weui-cell__hd">
+               <img src="images/code_01.png" alt="" class="me-ico">
+            </div>
+            <div class="weui-cell__bd ml-10 person-list">
+              <p>我的二维码</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+          <a class="weui-cell weui-cell_access" href="metask.html">
+            <div class="weui-cell__hd">
+               <img src="images/addr_ico.png" alt="" class="me-ico">
+            </div>
+            <div class="weui-cell__bd ml-10 person-list">
+              <p>我的任务</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+          <a class="weui-cell weui-cell_access" href="add_address.html">
+            <div class="weui-cell__hd">
+               <img src="images/addr_ico.png" alt="" class="me-ico">
+            </div>
+            <div class="weui-cell__bd ml-10 person-list">
+              <p>地址管理</p>
+            </div>
+            <div class="weui-cell__ft"></div>
+          </a>
+    </div>
+    
+    
+    <div class="weui-cells">
+        <a class="weui-cell weui-cell_access" href="feedback.html">
+          <div class="weui-cell__hd">
+             <img src="images/feedback.png" alt="" class="me-ico">
+          </div>
+          <div class="weui-cell__bd ml-10 person-list">
+            <p>意见反馈</p>
+          </div>
+          <div class="weui-cell__ft"></div>
+        </a>
+        <a class="weui-cell weui-cell_access" href="security.html">
+          <div class="weui-cell__hd">
+             <img src="images/set_ico.png" alt="" class="me-ico">
+          </div>
+          <div class="weui-cell__bd ml-10 person-list">
+            <p>账号与安全</p>
+          </div>
+          <div class="weui-cell__ft"></div>
+        </a>
+    </div> -->
+
+    <script src="../lib/jquery-2.1.4.js"></script>
+    <script src="../js/jquery-weui.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="utils/common.js"></script>
+    <script src="utils/configs.js"></script>
+    <script src="js/me.js"></script>
+    <script>
+      FastClick.attach(document.body);
+    </script>
+
+  </body>
+</html>
